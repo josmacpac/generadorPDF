@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificado de Estudios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .header h2 {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+            color: #555;
+        }
+        .content {
+            margin-bottom: 30px;
+        }
+        .content p {
+            line-height: 1.6;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .footer p {
+            margin: 0;
+        }
+        .signature {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+        .signature div {
+            width: 40%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="file:///home/josmacpac/Documents/Python/generadorPdf/Pythonlogo.png" alt="Logo de la Institución" width="100" height="auto">
+            <h1>Certificado de Estudios</h1>
+            <h2>Nombre de la Institución</h2>
+        </div>
+        <div class="content">
+            <p>Por la presente se certifica que:</p>
+            <p><strong>{{nombreColaborador}}</strong></p>
+            <p>Ha completado satisfactoriamente el curso:</p>
+            <p><strong>{{nombreCurso}}</strong></p>
+            <p>En la fecha:</p>
+            <p><strong>[Fecha de Finalización]</strong></p>
+        </div>
+        <div class="footer">
+            <p>Firma y Sello de la Institución</p>
+        </div>
+        <div class="signature">
+            <div>
+                <p>______________________</p>
+                <p>[Nombre del Director]</p>
+                <p>Director</p>
+            </div>
+            <div>
+                <p>______________________</p>
+                <p>[Nombre del Secretario]</p>
+                <p>Secretario</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
